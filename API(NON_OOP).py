@@ -37,7 +37,7 @@ def all_persons_in_company(company_number):
     url = f"company/{company_number}/persons-with-significant-control"
     return call_api_with(url).get('items', [])
 
-## I wrote this function myself
+
 def filing_history(company_number,number_of_filings=100):
     page_size = 100
     number_of_pages=5
